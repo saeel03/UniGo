@@ -1,0 +1,100 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext">
+
+        <!-- Driver Name -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Vehicle Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSeats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Seats"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textViewVehicleType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle Type"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Date and Time -->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Locations -->
+        <TextView
+            android:id="@+id/textViewStartLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Location"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewEndLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Location"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/textViewCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Book Button -->
+        <Button
+            android:id="@+id/buttonBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
